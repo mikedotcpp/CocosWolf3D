@@ -51,7 +51,7 @@ void Game::showIntro()
     introLayer->runAction( cocos2d::Sequence::create( cocos2d::FadeOut::create( 5 ), cocos2d::RemoveSelf::create(), NULL ) );
     addChild( introLayer );
     
-    cocos2d::experimental::AudioEngine::play2d( "sounds/getthem.wav" );
+    cocos2d::experimental::AudioEngine::play2d( "sounds/getthem.wav", true );
 }
 
 /**
